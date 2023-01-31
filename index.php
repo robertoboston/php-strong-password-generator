@@ -1,4 +1,8 @@
 <?php
+$password_length = $_GET['number'];
+var_dump($password_length);
+
+
 
 ?>
 
@@ -22,7 +26,7 @@
 
         <main class="container-main">
             <form action="./index.php" method="GET">
-                <label for="number">Numero caratteri password</label>
+                <label for="number">Lumghezza Password</label>
                 <input class="numeri-password" type="number" name="number" id="number" placeholder="numero">
                 <button class="send-button">INVIA</button>
             </form>
