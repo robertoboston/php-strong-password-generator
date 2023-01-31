@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(39, 39, 108);
+    font-family: 'elvetica',sans-serif;
+}
+
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+header{
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+
+.container-main{
+    background-color: white;
+    height: 700px;
+}
+
+.numeri-password{
+    width: 100px;
+    text-align: center;
+    margin: 20px 100px;
+}
+
+.send-button{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(26, 26, 112);
+    color: white;
+    border-style: none;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+form{
+    padding: 50px;
+}
