@@ -1,12 +1,13 @@
 <?php
-
-// if(!empty($_GET['number'])) {
-//     header('location: ./index.php');
-// }
-
 include __DIR__. '/function.php';
 
+
 $number = $_GET['number'];
+
+// if(!isset($number)){
+//    header('location: ./index.php');
+    
+// }
 
 
 ?>
@@ -34,7 +35,7 @@ $number = $_GET['number'];
                 <input class="numeri-password" type="number" name="number" id="number" placeholder="numero">
                 <button class="send-button">INVIA</button>
             </form>
-            <p class="pssw">La tua password è: <?php echo randomPassword($number)?></p>
+            <p class="pssw">La tua password è: <strong><?php echo randomPassword($number)?></strong></p>
         </main>
     </div>
    
