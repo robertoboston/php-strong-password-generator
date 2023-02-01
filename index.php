@@ -1,8 +1,16 @@
 <?php
-$password_length = $_GET['number'];
-var_dump($password_length);
 
 
+$number = $_GET['number'];
+
+function randomPassword($number) {
+    $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
+    $password = '';
+    for ($i = 0; $i < $number; $i++) {
+        $password = $password.$alphabet[rand(0,strlen($alphabet)-1)];
+    }
+    return $password;
+}
 
 ?>
 
@@ -30,6 +38,7 @@ var_dump($password_length);
                 <input class="numeri-password" type="number" name="number" id="number" placeholder="numero">
                 <button class="send-button">INVIA</button>
             </form>
+            <p class="pssw">La tua password è: <?php echo randomPassword($number)?></p>
         </main>
     </div>
    
