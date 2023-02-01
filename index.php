@@ -1,16 +1,13 @@
 <?php
 
+// if(!empty($_GET['number'])) {
+//     header('location: ./index.php');
+// }
+
+include __DIR__. '/function.php';
 
 $number = $_GET['number'];
 
-function randomPassword($number) {
-    $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
-    $password = '';
-    for ($i = 0; $i < $number; $i++) {
-        $password = $password.$alphabet[rand(0,strlen($alphabet)-1)];
-    }
-    return $password;
-}
 
 ?>
 
@@ -31,10 +28,9 @@ function randomPassword($number) {
             <h1>Strong password generator</h1>
             <h3>Genera una password sicura</h3>
         </header>
-
         <main class="container-main">
             <form action="./index.php" method="GET">
-                <label for="number">Lumghezza Password</label>
+                <label for="number">Lunghezza Password</label>
                 <input class="numeri-password" type="number" name="number" id="number" placeholder="numero">
                 <button class="send-button">INVIA</button>
             </form>
